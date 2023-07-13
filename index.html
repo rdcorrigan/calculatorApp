@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <table>
+        <thead>
+          <tr class="thead">
+            <th colspan="3"><input id="inputField" type="text"></th>
+            <td><button id="btn=" onclick="inputEquals()">=</button></td>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button id="btn1" onclick="input1()">1</button></td>
+                <td><button id="btn2" onclick="input2()">2</button></td>
+                <td><button id="btn3" onclick="input3()">3</button></td>
+                <td><button id="btnAdd" onclick="inputPlus()">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn4" onclick="input4()">4</button></td>
+                <td><button id="btn5" onclick="input5()">5</button></td>
+                <td><button id="btn6" onclick="input6()">6</button></td>
+                <td><button id="btnSub" onclick="inputMinus()">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn7" onclick="input7()">7</button></td>
+                <td><button id="btn8" onclick="input8()">8</button></td>
+                <td><button id="btn9" onclick="input9()">9</button></td>
+                <td><button id="btnMult" onclick="inputMult()">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn(" onclick="inputOpenBracket()">(</button></td>
+                <td><button id="btn0" onclick="input0()">0</button></td>
+                <td><button id="btn)" onclick="inputCloseBracket()">)</button></td>
+                <td><button id="btnDiv" onclick="inputDiv()">/</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnClearInput" onclick="inputClear()">CLEAR INPUT</button></td>
+                <td colspan="2"><button id="btnClearAll" onclick="refresh()">CLEAR ALL</button></td>                
+            </tr>
+            <tr>
+                <td id="appendToMe" colspan="4">Result:</td>
+            </tr>
+        </tbody>
+      </table>
+    <script src="script.js"></script>
+</body>
+</html>
