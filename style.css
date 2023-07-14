@@ -10,7 +10,6 @@ body {
 }
 button {
     font-family:monospace;
-    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-size: 20px;
     font-weight: 900;
     width: 100%;
@@ -44,7 +43,6 @@ table {
 }
 table, th, td {
     margin: 5%;
-    
     border: 2px solid black;
 } 
 
