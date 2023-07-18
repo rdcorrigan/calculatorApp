@@ -161,12 +161,10 @@ const inputDiv = () => inputField.value += '/';
 const inputOpenBracket = () => inputField.value += '(';
 const inputCloseBracket = () => inputField.value += ')';
 const inputEquals = () => {
-    calculate(input.value)
-    document.getElementById("btn=").disabled = true;
+    calculate(input.value);
 };
 const inputClear = () => {
     inputField.value = '';
-    document.getElementById("btn=").disabled = false;
 }
 const refresh = () => location.reload();
 

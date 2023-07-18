@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon"/>
 </head>
 <body>
-    <h1>Calculator</h1>
+    <h1>Equation Calculator</h1>
     <table>
         <thead>
           <tr class="thead">
@@ -40,12 +45,14 @@
                 <td><button id="btn)" onclick="inputCloseBracket()">)</button></td>
                 <td><button id="btnDiv" onclick="inputDiv()">÷</button></td>
             </tr>
-            <tr>
-                <td colspan="2"><button id="btnClearInput" onclick="inputClear()">NEW ENTRY</button></td>
-                <td colspan="2"><button id="btnClearAll" onclick="refresh()">CLEAR ALL</button></td>                
+            <tr id="historyCell">
+                <td colspan="2"><button id="btnClearInput" onclick="inputClear()">CLEAR<br> ENTRY</button></td>
+                <td colspan="2"><button id="btnClearAll" onclick="refresh()">CLEAR HISTORY</button></td>                
             </tr>
             <tr>
-                <td id="appendToMe" colspan="4">Calculation History:</td>
+                
+                <td id="appendToMe" colspan="4"><div>Calculation History:</div></td>
+                
             </tr>
         </tbody>
       </table>
