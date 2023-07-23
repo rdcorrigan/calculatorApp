@@ -6,7 +6,6 @@ body {
     display: grid;
     font-family:monospace;
     justify-content: center;
-    align-items: middle;
 }
 button {
     background-color: rgb(255, 255, 255);
@@ -47,6 +46,7 @@ button:active {
     padding-top: 7px;
 }
 h1 {
+    font-size: 1.5rem;
     font-style: italic;
     padding: 5%;
     text-align: center;
