@@ -48,11 +48,11 @@ button:active {
     padding-bottom: 20px;
 }
 #history p {
+    margin-left: 3%;
     padding: 10px;
-    text-align: center;
 }
 div ol{
-    margin-left: 10%;
+    margin-left: 8%;
 }
 h1 {
     font-size: 1.4rem;
