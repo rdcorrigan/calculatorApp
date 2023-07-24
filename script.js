@@ -134,16 +134,18 @@ input = document.querySelector('input');
 
 const calculate = () => {
     const value = document.querySelector('input').value, 
-    appendDiv = document.createElement('div'), 
-    div = document.querySelector('#appendToMe'), 
+    appendLi = document.createElement('li'), 
+    olLi = document.querySelector('#appendList'), 
     output = calc(value);
     if (value.length) {
-      appendDiv.append(value + " = " + output);
-      appendDiv.classList.add('output')
-      div.append(appendDiv);
+      appendLi.append(`${value} = ${output}`);
+      appendLi.classList.add('output')
+      olLi.append(appendLi);
     }
   }
 
+const deleteBtn = () => inputField.value = inputField.value.slice(0,inputField.value.length-1);
+const inputEquals = () => calculate(input.value);
 const input0 = () => inputField.value += 0;
 const input1 = () => inputField.value += 1;
 const input2 = () => inputField.value += 2;
@@ -160,9 +162,6 @@ const inputMult = () => inputField.value += '*';
 const inputDiv = () => inputField.value += '/';
 const inputOpenBracket = () => inputField.value += '(';
 const inputCloseBracket = () => inputField.value += ')';
-const inputEquals = () => {
-    calculate(input.value);
-};
 const inputClear = () => {
     inputField.value = '';
 }

@@ -12,15 +12,19 @@
     <link rel="icon" href="favicon.ico?v=2" type="image/x-icon"/>
 </head>
 <body>
+    <div class="container">
     <h1>Expression Calculator</h1>
     <table>
         <thead>
           <tr class="thead">
-            <th colspan="3"><input id="inputField" type="text"></th>
-            <td><button id="btn=" onclick="inputEquals()">=</button></td>
+            <th colspan="4"><input id="inputField" type="text"></th>
           </tr>
         </thead>
         <tbody>
+            <tr>
+                <td colspan="2"><button id="btn=" onclick="deleteBtn()">DELETE</button></td>
+                <td colspan="2"><button id="btnDelete" onclick="inputEquals()">=</button></td>
+            </tr>
             <tr>
                 <td><button id="btn1" onclick="input1()">1</button></td>
                 <td><button id="btn2" onclick="input2()">2</button></td>
@@ -45,17 +49,17 @@
                 <td><button id="btn)" onclick="inputCloseBracket()">)</button></td>
                 <td><button id="btnDiv" onclick="inputDiv()">÷</button></td>
             </tr>
-            <tr id="historyCell">
-                <td colspan="2"><button id="btnClearInput" onclick="inputClear()">CLEAR<br> ENTRY</button></td>
-                <td colspan="2"><button id="btnClearAll" onclick="refresh()">CLEAR HISTORY</button></td>                
-            </tr>
             <tr>
-                
-                <td id="appendToMe" colspan="4"><div>Calculation History:</div></td>
-                
+                <td colspan="2"><button id="btnClearInput" onclick="inputClear()">CLEAR<br> ENTRY</button></td>
+                <td colspan="2"><button id="btnClearAll" onclick="refresh()">CLEAR<br>  HISTORY</button></td>                
             </tr>
         </tbody>
       </table>
+    </div>
+    <div id="history">
+        <p>Calculation History:</p>
+        <ol id="appendList"></ol>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
