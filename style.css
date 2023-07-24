@@ -35,13 +35,16 @@ button:active {
 }
 #btnClearInput, #btnClearAll {
     width: 100%;
-    padding: 11px;
+    padding: 8px 0;
 }
+#btnDelete, #btnEquals {
+    padding: 15px 0px;
+} 
 #history {
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
     font-size: 1.1rem;
-    margin-top: 3%;
+    margin-top: 2%;
     padding-bottom: 20px;
 }
 #history p {
