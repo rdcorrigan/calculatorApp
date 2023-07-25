@@ -1,78 +1,162 @@
-* {
-    margin: 0;
-}
-body {
-    background-color: lightblue;
-    font-family:monospace;
-}
-.container {
-    display: grid;
-    justify-content: center;
-}
-button {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    font-family:monospace;
-    font-size: 20px;
-    font-weight: 900;
-    width: 100%;
-    padding: 15px 25px;
-}
-button:hover {
-    background-color: black;
-    border:2px solid white;
-    color: white;
-    cursor: pointer;
-}
-button:active {
-    background-color: rgb(171, 82, 250);
-    border:2px solid black;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-#btnAdd, #btnSub, #btnMult, #btnDiv {
-    padding: 15px 30px;
-}
-#btnClearInput, #btnClearAll {
-    width: 100%;
-    padding: 8px 0;
-}
-#btnDelete, #btnEquals {
-    padding: 15px 0px;
-} 
-#history {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
-    font-size: 1.1rem;
-    margin-top: 2%;
-    padding-bottom: 20px;
-}
-#history p {
-    margin-left: 3%;
-    padding: 10px;
-}
-div ol{
-    margin-left: 8%;
-}
-h1 {
-    font-size: 1.4rem;
-    font-style: italic;
-    padding: 5%;
-    text-align: center;
-}
-input {
-    border-color: black;
-    width: 90%;
-    padding: 16px 11px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 400;
-}
-table {
-    background-color: rgb(127, 100, 243);
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-}
-table, th, td {
-    border-radius: 10px;
-} 
+@media (min-width: 449px) {
+    * {
+        margin: 0;
+    }
+    body {
+        background-color: lightblue;
+        font-family:monospace;
+    }
+    .container {
+        display: grid;
+        justify-content: center;
+    }
+    button {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-family:monospace;
+        font-size: 20px;
+        font-weight: 900;
+        width: 100%;
+        padding: 15px 25px;
+    }
+    button:hover {
+        background-color: black;
+        border:2px solid white;
+        color: white;
+        cursor: pointer;
+    }
+    button:active {
+        background-color: rgb(171, 82, 250);
+        border:2px solid black;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    #btnAdd, #btnSub, #btnMult, #btnDiv {
+        padding: 15px 30px;
+    }
+    #btnClearInput, #btnClearAll {
+        width: 100%;
+        padding: 8px 0;
+    }
+    #btnDelete, #btnEquals {
+        padding: 15px 0px;
+    } 
+    #history {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        font-size: 1.1rem;
+        margin-top: 2%;
+        padding-bottom: 20px;
+
+    }
+    #history p {
+        font-weight: 900;
+        padding: 10px;
+        margin-left: 10%;
+    }
+    div ol{
+        margin-left: 15%;
+    }
+    h1 {
+        font-size: 1.4rem;
+        font-style: italic;
+        padding: 5%;
+        text-align: center;
+    }
+    input {
+        border-color: black;
+        width: 90%;
+        padding: 16px 11px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 400;
+    }
+    table {
+        background-color: rgb(127, 100, 243);
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table, th, td {
+        border-radius: 10px;
+    } 
+
+
+  }
+
+@media (max-width: 450px) {
+    * {
+        margin: 0;
+    }
+    body {
+        background-color: lightblue;
+        font-family:monospace;
+    }
+    .container {
+        display: grid;
+        justify-content: center;
+    }
+    button {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-family:monospace;
+        font-size: 20px;
+        font-weight: 900;
+        width: 100%;
+        padding: 15px 25px;
+    }
+    button:hover {
+        background-color: black;
+        border:2px solid white;
+        color: white;
+        cursor: pointer;
+    }
+    button:active {
+        background-color: rgb(171, 82, 250);
+        border:2px solid black;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    #btnAdd, #btnSub, #btnMult, #btnDiv {
+        padding: 15px 30px;
+    }
+    #btnClearInput, #btnClearAll {
+        width: 100%;
+        padding: 8px 0;
+    }
+    #btnDelete, #btnEquals {
+        padding: 15px 0px;
+    } 
+    #history {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        font-size: 1.1rem;
+        margin-top: 2%;
+        padding-bottom: 20px;
+    }
+    #history p {
+        font-weight: 900;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.4rem;
+        font-style: italic;
+        padding: 5%;
+    }
+    input {
+        border-color: black;
+        width: 90%;
+        padding: 16px 11px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 400;
+    }
+    table {
+        background-color: rgb(127, 100, 243);
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    table, th, td {
+        border-radius: 10px;
+    } 
+
+  }
