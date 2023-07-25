@@ -141,6 +141,7 @@
         font-size: 1.4rem;
         font-style: italic;
         padding: 5%;
+        text-align: center;
     }
     input {
         border-color: black;
