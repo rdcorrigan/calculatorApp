@@ -168,7 +168,7 @@ const inputClear = () => {
 const refresh = () => location.reload();
 
 input.addEventListener('keydown', (event) => {
-    if (event.keyCode === 13) calculate(input.value); 
+    if (event.key === "Enter") calculate(input.value); 
 });
 input.addEventListener('keydown', (event) => {
     if (event.key === "Escape") inputClear();
